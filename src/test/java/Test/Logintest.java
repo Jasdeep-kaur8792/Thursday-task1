@@ -7,6 +7,7 @@ public class Logintest extends Baseclass
         setup();
         pageFactory.getLoginPage().login();
         pageFactory.getLoginPage().admin();
+        pageFactory.getLoginPage().select();
 
     }
 }
