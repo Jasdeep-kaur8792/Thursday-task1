@@ -31,8 +31,9 @@ public class LoginPage {
 
     public void select() throws InterruptedException {
         driver.findElement(By.xpath("(//div[@class = 'oxd-select-text--after'])[1]")).click();
-        Select objSelect =new Select(driver.findElement(By.xpath("(//div[@class = 'oxd-select-text--after'])[1]")));
-        objSelect.selectByIndex(2);
+        driver.findElement(By.xpath("//*[contains(text(),'Admin')]")).click();
+
+
 
     }
 }
