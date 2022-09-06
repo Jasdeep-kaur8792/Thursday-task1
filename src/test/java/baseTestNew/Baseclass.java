@@ -14,8 +14,6 @@ public class Baseclass {
     static WebDriver driver;
     public static PageFactoryNew pageFactoryNew;
 
-
-
     @BeforeClass
     public static void setup()
     {
