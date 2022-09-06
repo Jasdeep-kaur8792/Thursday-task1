@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 public class PageFactory {
     WebDriver driver;
     private LoginPage loginPage;
+    private AdminPage admin;
+   // private AdminPage select;
+
+
     public PageFactory(WebDriver driver)
     {
         this.driver= driver;
@@ -17,6 +21,22 @@ public class PageFactory {
         }
         return loginPage;
     }
+    public AdminPage getAdminPage()
+    {
+        if(admin==null)
+        {
+            admin =new AdminPage(driver);
+        }
+        return admin;
+    }
+//    public adminPage getadminPage()
+//    {
+//        if(select==null)
+//        {
+//            select =new adminPage(driver);
+//        }
+//        return select;
+//    }
 
 
    }

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Cases" verbose="1" >
+    <test name="Verify user is logged in">
+
+        <classes>
+            <class name="newTest.LogintestNew"/>
+            <class name="newTest.admintestnew"/>
+
+        </classes>
+    </test>
+
+</suite>
