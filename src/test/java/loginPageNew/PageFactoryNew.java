@@ -43,6 +43,6 @@ public class PageFactoryNew {
         if ( leaveApply== null) {
             leaveApply= new LeaveApply(driver);
         }
-        return leaveApply();
+        return leaveApply;
     }
 }

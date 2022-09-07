@@ -10,9 +10,10 @@ public class LeaveApply
     {
         this.driver = driver;
     }
-    public void applyLeave()
-    {
-        driver.findElement(By.xpath("\"//input[@class='oxd-input oxd-input--active'])[2]\"")).click();
-        driver.findElement(By.partialLinkText("")).click();
+    public void applyLeave() throws InterruptedException {
+        driver.findElement(By.xpath("(//a[@class='oxd-topbar-body-nav-tab-item'])[1]")).click();
+        driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]")).click();
+       driver.findElement(By.partialLinkText("")).click();
+        Thread.sleep(3000);
     }
 }

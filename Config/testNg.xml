@@ -5,6 +5,7 @@
         <classes>
             <class name="newTest.LogintestNew"/>
             <class name="newTest.LeavePageTest"/>
+            <class name="newTest.LeaveApplyTest"/>
 
         </classes>
     </test>
