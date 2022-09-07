@@ -1,17 +1,19 @@
 package newTest;
 
-import Test.Baseclass;
-import org.openqa.selenium.WebDriver;
+import baseTestNew.Baseclass;
 import org.testng.annotations.Test;
 
-import static baseTestNew.Baseclass.pageFactoryNew;
-
 public class LeavePageTest extends Baseclass {
-    static WebDriver driver;
-
     @Test
-    public void veryfyLeavePageClick()
+  public void start() throws InterruptedException
+  {
+
+      pageFactoryNew.getLoginPage().newlogin();
+  }
+    @Test(dependsOnMethods = "start")
+    public void verifyleavepage()
     {
+
         pageFactoryNew.getLeavePage().leavePageClick();
     }
 

@@ -4,7 +4,7 @@
 
         <classes>
             <class name="newTest.LogintestNew"/>
-            <class name="newTest.admintestnew"/>
+            <class name="newTest.LeavePageTest"/>
 
         </classes>
     </test>

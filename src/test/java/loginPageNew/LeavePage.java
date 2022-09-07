@@ -4,8 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LeavePage {
-    static WebDriver driver;
-    By leaveclick= By.xpath("class=\"oxd-main-menu-item active\"");
+    WebDriver driver;
 
     public LeavePage(WebDriver driver)
     {
@@ -13,6 +12,7 @@ public class LeavePage {
     }
     public void leavePageClick()
     {
-        driver.findElement(By.partialLinkText(String.valueOf(leaveclick))).click();
+        driver.findElement(By.partialLinkText("Leave")).click();
+        driver.findElement(By.partialLinkText("Apply")).click();
     }
 }

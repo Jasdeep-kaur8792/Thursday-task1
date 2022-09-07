@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class AdminPageNew {
 
-        static WebDriver driver;
+        WebDriver driver;
         //user add
         By pass = By.xpath("(//input[@type='password'])[1]");
         // By emp=By.xpath("//div[@class='oxd-autocomplete-text-input oxd-autocomplete-text-input--active']//input[@placeholder='Type for hints...']");
