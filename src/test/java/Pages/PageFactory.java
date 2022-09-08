@@ -6,38 +6,25 @@ public class PageFactory {
     WebDriver driver;
     private LoginPage loginPage;
     private AdminPage admin;
-   // private AdminPage select;
 
-
-    public PageFactory(WebDriver driver)
-    {
-        this.driver= driver;
+    public PageFactory(WebDriver driver) {
+        this.driver = driver;
     }
+
     public LoginPage getLoginPage()
     {
-        if(loginPage==null)
-        {
-            loginPage=new LoginPage(driver);
+        if (loginPage == null) {
+            loginPage = new LoginPage(driver);
         }
         return loginPage;
     }
-    public AdminPage getAdminPage()
-    {
-        if(admin==null)
+
+    public AdminPage getAdminPage() {
+        if (admin == null)
         {
-            admin =new AdminPage(driver);
+            admin = new AdminPage(driver);
         }
         return admin;
     }
-//    public adminPage getadminPage()
-//    {
-//        if(select==null)
-//        {
-//            select =new adminPage(driver);
-//        }
-//        return select;
-//    }
-
-
-   }
+}
 

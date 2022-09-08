@@ -1,13 +1,24 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Cases" verbose="1" >
-    <test name="Verify user is logged in">
+<suite name="All Test Cases" verbose="1">
 
+<!--    <test name="Verify user is logged in">-->
+<!--        <parameter name="browserName" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="newTest.LogintestNew"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Verify user clicked on leave page">-->
+<!--        <parameter name="browserName" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="newTest.LeavePageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Verify user clicked on Apply leave">
+        <parameter name="browserName" value="chrome"/>
         <classes>
-            <class name="newTest.LogintestNew"/>
-            <class name="newTest.LeavePageTest"/>
             <class name="newTest.LeaveApplyTest"/>
-
         </classes>
     </test>
-
 </suite>
