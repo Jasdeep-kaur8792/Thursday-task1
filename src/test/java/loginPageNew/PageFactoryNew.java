@@ -8,6 +8,8 @@ public class PageFactoryNew {
 
     private LoginPageNew loginPageNew;
     private AdminPageNew admin;
+    private LeavePage leavePage;
+    private LeaveApply leaveApply;
 
     public PageFactoryNew(WebDriver driver)
     {
@@ -28,5 +30,19 @@ public class PageFactoryNew {
             admin = new AdminPageNew(driver);
         }
         return admin;
+    }
+    public LeavePage getLeavePage()
+    {
+        if ( leavePage== null) {
+            leavePage= new LeavePage(driver);
+        }
+        return  leavePage;
+    }
+    public LeaveApply getLeaveApply()
+    {
+        if ( leaveApply== null) {
+            leaveApply= new LeaveApply(driver);
+        }
+        return leaveApply;
     }
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Baseclass {
     static WebDriver driver;
     protected static PageFactory pageFactory;
+
     public static void setup()
     {
         driver = new ChromeDriver();
@@ -14,6 +15,8 @@ public class Baseclass {
  driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
  pageFactory=new PageFactory(driver);
 }
+
+
 public void close()
 {
    driver.close();
